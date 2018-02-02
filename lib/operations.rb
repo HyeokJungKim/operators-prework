@@ -1,5 +1,5 @@
 def unsafe?(speed)
-	return !(40..60).cover?(speed)
+	return !speed.between?(40,60)
 end
 
 def not_safe?(speed)
